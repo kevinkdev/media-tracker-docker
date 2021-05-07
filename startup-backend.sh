@@ -2,5 +2,5 @@
 
 echo "Starting up server..."
 
-cd server
+cd media-tracker/server
 npm start
