@@ -2,8 +2,8 @@ FROM node:slim
 LABEL maintainer="Kevin Kamani <kevinkdev97@gmail.com>"
 ENV TMDB_KEY=
 
-RUN apt update && \
-    apt install git && \
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends git && \
     git clone https://github.com/michaelx/media-tracker.git && \
     cd client && \ 
     npm install && \
