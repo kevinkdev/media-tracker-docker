@@ -14,8 +14,11 @@ RUN apk add git && \
 EXPOSE 3000
 EXPOSE 3001
  
-COPY startup.sh /
+COPY startup-backend.sh /
+COPY startup-frontend.sh /
 
-RUN chmod 755 /startup.sh
+RUN chmod 755 /startup-backend.sh
+RUN chmod 755 /startup-frontend.sh
 
-CMD ["bash","/startup.sh"]
+CMD ["bash","/startup-backend.sh"]
+CMD ["bash","/startup-frontend.sh"]
