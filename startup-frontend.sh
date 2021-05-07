@@ -2,6 +2,6 @@
 
 echo "Starting up frontend..."
 
-cd client
+cd media-tracker/client
 sed sed -i "s/''/$TMDB_KEY/" src/config.js
 npm start
