@@ -22,5 +22,4 @@ COPY startup-frontend.sh /
 RUN chmod 755 /startup-backend.sh
 RUN chmod 755 /startup-frontend.sh
 
-CMD ["bash","/startup-backend.sh"]
-CMD ["bash","/startup-frontend.sh"]
+CMD ./startup-backend.sh & ./startup-frontend.sh
