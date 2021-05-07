@@ -6,7 +6,7 @@ RUN apt-get update && \
     apt-get install -y --no-install-recommends ca-certificates && \
     apt-get install -y --no-install-recommends git && \
     git clone http://github.com/michaelx/media-tracker.git && \
-    cd client && \ 
+    cd media-tracker/client && \ 
     npm install && \
     cd ../server && \ 
     npm install && \
