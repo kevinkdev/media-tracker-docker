@@ -4,7 +4,7 @@ ENV TMDB_KEY=
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends git && \
-    git clone https://github.com/michaelx/media-tracker.git && \
+    git clone http://github.com/michaelx/media-tracker.git && \
     cd client && \ 
     npm install && \
     cd ../server && \ 
